@@ -21,14 +21,14 @@ let allCars = [
  * @param car A car object containing a model and a description.
  */
 function displayCar(car) {
-  let carTitleElement = document.querySelector('#car-title');
+  let carTitleElement = document.querySelector('#car-title')//need to use #because it's id, not the same for getElementbyID (can just use the name);
   let carInfoElement = document.querySelector('#car-info');
 
   carTitleElement.innerText = car.model;
   carInfoElement.innerText = car.description;
 }
 
-function onSelectValueChange() {
+function onSelectValueChange() { //onChange makes the most sense for a dropdown menu
   // In this function, `this` corresponds to the select
   // element. So `this.value` will contain the value of the
   // selected option as a string.

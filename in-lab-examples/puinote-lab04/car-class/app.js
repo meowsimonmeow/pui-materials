@@ -37,3 +37,46 @@ class Car {
 */
 let carElement = null; // implement
 let theCar = null; // implement
+
+
+let speed = 0;
+let car0 = {
+    model: "Fiat",
+    year: 2050,
+    drive: function(newSpeed){
+        this.speed = newSpeed;
+    }
+}
+
+class Car{
+    model;
+    year;
+
+    constructor(model, year){
+        this.model = model;
+        this.year = year;
+    }
+
+    drive(newSpeed){
+        console.log = "I'm driving at this speed";
+    }
+}
+
+let car1 = new Car("Fiat", 2050, 10);
+let car2 = new Car("Honda", 2019, 20);
+console.log(car1.model);
+car1.drive(10);
+car2.speed = 50;
+console.log(car1.speed);
+console.log(car2.model); 
+console.log(car2.speed);
+
+//javascript only compiles when you run, be careful about the scope of your variables
+//for hw3 has to do with manipulating the price on the dropdown
+//instead of making multiple car objects, you can make classes instead
+//constructors are similar in function to functions but the notation is slightly different
+
+
+// HW3 example
+// how to create an interactive dropdown menu
+
